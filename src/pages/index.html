@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>WTF: Webpack starter kit</title>
+    <title>hydrapp</title>
     <meta name="description" content="Your project description" />
     <!-- Title -->
     <meta property="og:title" content="" />
@@ -146,20 +146,12 @@
   </head>
   <body>
     <main class="hydrapp">
-      <header class="hydrapp__header">
-        <h1 class="hydrapp__heading">hydrapp</h1>
-      </header>
-      <div class="hydrapp__meter">0</div>
-      <img
-        class="hydrapp__image"
-        src="../assets/img/water-glass.svg"
-        alt="water glass"
-      />
-      <div class="btn">
-        <button class="btn__add">dodaj szklankę</button>
-
-        <button class="btn__remove">usuń szklankę</button>
+      <h1 class="hydrapp__heading">hydrapp</h1>
+      <div class="glass">
+        <span class="glass__counter glass__counter--js">0</span>
       </div>
+      <button class="btn-add btn-add--js">dodaj szklankę</button>
+      <button class="btn-remove btn-remove--js">usuń szklankę</button>
     </main>
   </body>
 </html>

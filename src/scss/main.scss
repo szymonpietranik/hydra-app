@@ -1,7 +1,4 @@
 @import "~normalize.css";
-
-@import "_variables";
-@import "modules/hello.scss";
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;900&display=swap");
 
 html {
@@ -18,58 +15,59 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 body {
-  background: $wtf;
+  background: #3767ad;
   color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   min-height: 100vh;
-  font-family: "Roboto", cursive;
+  font-family: "Roboto", sans-serif;
 }
 
 .hydrapp {
-  display: flex;
-  flex-direction: column;
-  &__header {
-    align-self: center;
-  }
   &__heading {
     margin: 0 0 64px 0;
     color: #ffffff;
     font-weight: 500;
     font-size: 55px;
+    font-style: normal;
   }
-  &__meter {
+}
+.glass {
+  width: 280px;
+  height: 280px;
+  background: url("../assets/img/water-glass.svg");
+  background-size: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__counter {
     color: #000000;
-    font-weight: 900;
+    font-weight: 500;
     font-size: 112px;
-    position: absolute;
-    align-self: center;
-    top: 230px;
+    font-style: normal;
   }
 }
 
-.btn {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  &__add {
-    display: block;
-    width: 216px;
-    height: 47px;
-    border-radius: 4px;
-    background-color: #ffffff;
-    color: #000000;
-    border: none;
-    font-size: 18px;
-    font-weight: 500;
-    margin: 48px 0 48px 0;
-  }
-  &__remove {
-    color: #f5e5e7;
-    background-color: #3767ad;
-    border: none;
-    font-size: 14px;
-    font-weight: 500;
-  }
+.btn-add {
+  display: block;
+  width: 216px;
+  height: 47px;
+  border-radius: 4px;
+  background-color: #ffffff;
+  color: #000000;
+  border: none;
+  font-size: 18px;
+  font-weight: 500;
+  font-style: normal;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  margin: 48px 0 40px 0;
+}
+.btn-remove {
+  color: #f5e5e7;
+  background: none;
+  border: none;
+  font-style: normal;
+  font-size: 14px;
+  font-weight: 500;
 }
